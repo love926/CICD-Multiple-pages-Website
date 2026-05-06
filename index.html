@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coffee House</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f3ed;
+    color:#3e2723;
+}
+
+/* ===== NAVBAR ===== */
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 70px;
+    background:rgba(255,255,255,0.88);
+    backdrop-filter: blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    font-size:30px;
+    color:#6f4e37;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#4e342e;
+    font-size:17px;
+    font-weight:500;
+    position:relative;
+}
+
+nav ul li a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:2px;
+    background:#6f4e37;
+    transition:0.4s;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(
+        rgba(255,248,240,0.55),
+        rgba(255,248,240,0.85)
+    ),
+    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-content{
+    animation:fadeUp 1.8s ease;
+}
+
+.hero h2{
+    font-size:62px;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#5d4037;
+    margin-bottom:35px;
+}
+
+/* ===== BUTTON ===== */
+.btn{
+    padding:15px 45px;
+    background:#6f4e37;
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:40px;
+    box-shadow:0 12px 30px rgba(111,78,55,0.4);
+    transition:0.4s;
+    animation:pulse 2.5s infinite;
+}
+
+.btn:hover{
+    background:#8d6e63;
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(111,78,55,0.5);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#efe3d6;
+    text-align:center;
+    padding:22px;
+    font-size:14px;
+    color:#5d4037;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<nav>
+<h1>Coffee House</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="order.html">Order</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Fresh Coffee, Fresh Mood ☕</h2>
+        <p>Sunlit café • Cozy vibes • Perfect taste</p>
+        <a href="menu.html" class="btn">Explore Menu</a>
+    </div>
+</section>
+
+<footer>
+<p>©Abdul Haseeb And Rana Hussnain Iqbal Rao saab Coffee Shop </p>
+</footer>
+
+</body>
+</html>
+

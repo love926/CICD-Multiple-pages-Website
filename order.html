@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order | Coffee House</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+body{background:linear-gradient(#f7efe5,#fff)}
+
+header{background:#fff;padding:15px 60px;box-shadow:0 5px 15px rgba(0,0,0,.1)}
+nav{display:flex;justify-content:space-between;align-items:center}
+nav a{text-decoration:none;color:#6f4e37;font-weight:600;margin:0 15px}
+
+.box{
+max-width:500px;
+margin:120px auto;
+background:#fff;
+padding:40px;
+border-radius:25px;
+box-shadow:0 30px 60px rgba(0,0,0,.2);
+animation:fadeUp 1s;
+}
+
+input,select{
+width:100%;
+padding:14px;
+margin:15px 0;
+border-radius:12px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:30px;
+background:#6f4e37;
+color:#fff;
+font-size:18px;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Coffee House</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="order.html">Order</a>
+<a href="payment.html">Payment</a>
+</div>
+</nav>
+</header>
+
+<div class="box">
+<h2>Order Coffee ☕</h2>
+<select>
+<option>Espresso</option>
+<option>Cappuccino</option>
+<option>Latte</option>
+</select>
+<input type="number" placeholder="Quantity">
+<button onclick="location.href='payment.html'">Proceed to Payment</button>
+</div>
+
+</body>
+</html>
+

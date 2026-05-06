@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | Coffee House</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins}
+body{
+background:
+linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.9)),
+url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80")
+center/cover;
+}
+
+header{background:#fff;padding:15px 60px}
+nav{display:flex;justify-content:space-between}
+nav a{text-decoration:none;color:#6f4e37;font-weight:600;margin:0 15px}
+
+.form{
+max-width:400px;
+margin:120px auto;
+background:#fff;
+padding:40px;
+border-radius:25px;
+box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+input{
+width:100%;
+padding:14px;
+margin:15px 0;
+border-radius:12px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+border-radius:30px;
+background:#6f4e37;
+color:#fff;
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h2>Coffee House</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="login.html">Login</a>
+</div>
+</nav>
+</header>
+
+<div class="form">
+<h2>Member Login ☕</h2>
+<input placeholder="Username">
+<input type="password" placeholder="Password">
+<button onclick="alert('Welcome Back ☕')">Login</button>
+</div>
+
+</body>
+</html>
+

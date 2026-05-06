@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#000;
+    color:white;
+}
+
+header{
+    background:rgba(0,0,0,0.7);
+    padding:15px 50px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h1{
+    color:#cfa670;
+    font-size:28px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#cfa670;
+}
+
+.hero{
+    height:100vh;
+    background:url('../images/bg.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    animation:fadeIn 2s ease;
+}
+
+.hero h2{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    padding:12px 30px;
+    background:#cfa670;
+    color:black;
+    border:none;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+section{
+    padding:100px 50px;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card h3, .card p{
+    padding:15px;
+}
+
+.form-box{
+    max-width:400px;
+    margin:auto;
+    background:#111;
+    padding:30px;
+    border-radius:10px;
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    background:#222;
+    border:none;
+    color:white;
+}
+
+footer{
+    background:#111;
+    text-align:center;
+    padding:20px;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
